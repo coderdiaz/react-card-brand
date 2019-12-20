@@ -1,4 +1,4 @@
-import React from "react";
+import * as React from "react";
 
 export default (
   <g stroke="none" strokeWidth="1" fill="none" fillRule="evenodd">
