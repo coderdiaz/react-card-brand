@@ -1,0 +1,43 @@
+{
+  "name": "react-card-brand",
+  "version": "0.1.0-beta.1",
+  "author": {
+    "name": "Javier Diaz Chamorro",
+    "email": "hello@coderdiaz.me"
+  },
+  "scripts": {
+    "build": "rimraf dist && npm run lint && rollup -c",
+    "prepare": "npm run build",
+    "lint": "tslint -p ."
+  },
+  "main": "dist/react-card-brand.cjs.js",
+  "module": "dist/react-card-brand.esm.js",
+  "unpkg": "dist/react-card-brand.js",
+  "jsdelivr": "dist/react-card-brand.js",
+  "cdn": "dist/react-card-brand.js",
+  "files": [
+    "dist"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/coderdiaz/react-card-brand.git"
+  },
+  "bugs": {
+    "url": "https://github.com/coderdiaz/react-card-brand/issues"
+  },
+  "devDependencies": {
+    "@types/react": "^16.9.17",
+    "rimraf": "^3.0.0",
+    "rollup": "^1.27.13",
+    "rollup-plugin-commonjs": "^10.1.0",
+    "rollup-plugin-node-resolve": "^5.2.0",
+    "rollup-plugin-terser": "^5.1.3",
+    "rollup-plugin-typescript2": "^0.25.3",
+    "tslint": "^5.20.1",
+    "typescript": "^3.7.3"
+  },
+  "dependencies": {
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0"
+  }
+}
