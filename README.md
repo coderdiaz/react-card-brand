@@ -16,8 +16,7 @@ You can import `useCardBrand` into your component and use the `getSvgProps` call
 
 ```js
 import React from 'react';
-import { useCardBrand } from 'react-card-brand';
-import images from 'react-card-brand/images';
+import { useCardBrand, images } from 'react-card-brand';
 
 export default function Example() {
   const { getSvgProps } = useCardBrand();
