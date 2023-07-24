@@ -1,8 +1,10 @@
-import * as React from "react";
-
 export default (
   <g stroke="none" strokeWidth="1" fill="none" fillRule="evenodd">
-    <g id="New-Icons" transform="translate(-80.000000, -280.000000)" fillRule="nonzero">
+    <g
+      id="New-Icons"
+      transform="translate(-80.000000, -280.000000)"
+      fillRule="nonzero"
+    >
       <g id="Card-Brands" transform="translate(40.000000, 200.000000)">
         <g id="Color" transform="translate(0.000000, 80.000000)">
           <g id="Visa" transform="translate(40.000000, 0.000000)">

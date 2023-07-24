@@ -1,9 +1,15 @@
-import * as React from "react";
-
 export default (
   <g stroke="none" strokeWidth="1" fill="none" fillRule="evenodd">
     <g>
-      <rect id="Rectangle" fill="#D8D8D8" x="0" y="0" width="24" height="16" rx="1" />
+      <rect
+        id="Rectangle"
+        fill="#D8D8D8"
+        x="0"
+        y="0"
+        width="24"
+        height="16"
+        rx="1"
+      />
       <rect
         id="Rectangle"
         fill="#A6A6A6"
@@ -13,7 +19,15 @@ export default (
         height="1.88235294"
         rx="0.941176471"
       />
-      <rect id="Rectangle" fill="#FFFFFF" x="16.6153846" y="3.76470588" width="4.61538462" height="2.82352941" rx="1" />
+      <rect
+        id="Rectangle"
+        fill="#FFFFFF"
+        x="16.6153846"
+        y="3.76470588"
+        width="4.61538462"
+        height="2.82352941"
+        rx="1"
+      />
       <rect
         id="Rectangle"
         fill="#A6A6A6"

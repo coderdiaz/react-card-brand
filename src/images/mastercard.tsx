@@ -1,5 +1,3 @@
-import * as React from "react";
-
 export default (
   <g fill="none" fillRule="evenodd">
     <rect fill="#252525" height="16" rx="2" width="24" />
