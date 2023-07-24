@@ -7,6 +7,7 @@ import unionpay from './unionpay.js';
 import mastercard from './mastercard.js';
 import placeholder from './placeholder.js';
 import visa from './visa.js';
+import { CardType } from '../utils/validation.js';
 
 export default {
   amex,
@@ -18,4 +19,4 @@ export default {
   mastercard,
   placeholder,
   visa,
-};
+} as { [key in CardType]: React.ReactNode | JSX.Element };

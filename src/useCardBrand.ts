@@ -5,19 +5,19 @@ interface UseCardBrandProps {
   images?: {
     [key: string]: React.ReactNode | JSX.Element;
   };
-  cardNumber?: string;
+  type?: string;
   ariaLabel?: string;
 }
 
 export default function useCardBrand() {
   const getSvgProps = React.useCallback((props: UseCardBrandProps = {}) => {
     const images = props.images ?? {};
-    const type = 'placeholder';
+    const type = props.type ?? 'placeholder';
 
     return React.useMemo(
       () => ({
         'aria-label': props.ariaLabel ?? 'Placeholder card',
-        children: images[type] || images,
+        children: images[type] || null,
         width: '1.5em',
         height: '1em',
         viewBox: '0 0 24 16',

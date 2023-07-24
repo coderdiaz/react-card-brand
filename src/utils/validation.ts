@@ -1,4 +1,4 @@
-enum CardType {
+export enum CardType {
   Amex = 'amex',
   Diners = 'dinersclub',
   Discover = 'discover',
