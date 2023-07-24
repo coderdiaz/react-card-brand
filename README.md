@@ -1,6 +1,6 @@
 # React Card Brand
 
-> A zero-dependency React Hook to show the brand from a card type.
+> A zero-dependency React Hook to show and get the brand from a card type.
 
 ## Installation
 
@@ -28,6 +28,26 @@ export default function Example() {
   return (
     <div>
       <svg {...getSvgProps({ type: 'visa', images })} />
+    </div>
+  );
+}
+```
+
+### Get the brand from a card number
+
+You can use the `getCardType` function to get the brand from a card number.
+
+```js
+import React from 'react';
+import { useCardBrand, images } from 'react-card-brand';
+
+export default function Example() {
+  const { getSvgProps, getCardBrand } = useCardBrand();
+  const type = getCardBrand('4242424242424242');
+
+  return (
+    <div>
+      <svg {...getSvgProps({ type, images })} />
     </div>
   );
 }
