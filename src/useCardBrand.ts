@@ -12,11 +12,11 @@ interface UseCardBrandProps {
 export default function useCardBrand() {
   const getSvgProps = React.useCallback((props: UseCardBrandProps = {}) => {
     const images = props.images ?? {};
-    const type = props.type ?? 'placeholder';
+    const type = props.type ?? 'unknown';
 
     return React.useMemo(
       () => ({
-        'aria-label': props.ariaLabel ?? 'Placeholder card',
+        'aria-label': props.ariaLabel ?? 'Unknown card',
         children: images[type] || null,
         width: '1.5em',
         height: '1em',

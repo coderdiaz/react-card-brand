@@ -5,7 +5,7 @@ import hipercard from './hipercard.js';
 import jcb from './jcb.js';
 import unionpay from './unionpay.js';
 import mastercard from './mastercard.js';
-import placeholder from './placeholder.js';
+import unknown from './unknown.js';
 import visa from './visa.js';
 import { CardType } from '../utils/validation.js';
 
@@ -17,6 +17,6 @@ export default {
   jcb,
   unionpay,
   mastercard,
-  placeholder,
+  unknown,
   visa,
 } as { [key in CardType]: React.ReactNode | JSX.Element };
