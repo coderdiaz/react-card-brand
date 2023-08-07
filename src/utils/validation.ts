@@ -1,6 +1,6 @@
 export enum CardType {
   Amex = 'amex',
-  Diners = 'dinersclub',
+  Diners = 'diners',
   Discover = 'discover',
   Jcb = 'jcb',
   Mastercard = 'mastercard',
@@ -13,7 +13,7 @@ type CardTypes = { [key in CardType]: CardTypeConfig };
 
 const options: CardTypes = {
   amex: { size: [15], prefixes: ['34', '37'] },
-  dinersclub: {
+  diners: {
     size: [14],
     prefixes: ['300', '301', '302', '303', '304', '305', '36', '38'],
   },
@@ -82,5 +82,5 @@ export const getCardBrand = (cardNumber: string) => {
     }
   }
 
-  return 'placeholder';
+  return 'unknown';
 };

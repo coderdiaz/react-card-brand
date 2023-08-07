@@ -1,5 +1,5 @@
 import amex from './amex.js';
-import dinersclub from './dinersclub.js';
+import diners from './diners.js';
 import discover from './discover.js';
 import hipercard from './hipercard.js';
 import jcb from './jcb.js';
@@ -11,7 +11,7 @@ import { CardType } from '../utils/validation.js';
 
 export default {
   amex,
-  dinersclub,
+  diners,
   discover,
   hipercard,
   jcb,
